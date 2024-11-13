@@ -1,0 +1,186 @@
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do body com imagem de fundo */
+body {
+  background-image: url('../public/assets/img/fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta para cobrir todo o fundo */
+}
+
+/* Estilo do título */
+h1 {
+  margin-bottom: 2pt;
+  text-align: center;
+  background-color: #fa0000;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%; /* Ajuste conforme necessário */
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo para listas */
+.li {
+  list-style: none; /* Remove o estilo de lista padrão */
+  margin: 0;
+  width: 80%; /* Ajusta o tamanho horizontal */
+}
+
+/* Grupos de tier */
+.tier-group {
+  display: flex;
+  align-items: stretch; /* Garante alinhamento vertical total */
+  width: 100%;
+  background-color: #1A1B16; /* Cor de fundo escura */
+}
+
+/* Container de imagens */
+.image-container {
+
+  display: flex;
+  gap: 10px; /* Espaçamento entre as imagens */
+  flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+  justify-content: flex-start; /* Alinha à esquerda */
+}
+
+/* Estilo para imagens carregadas */
+.uploaded-image {
+  width: 80px; /* Ajuste conforme necessário */
+  height: 74px; /* Ajuste conforme necessário */
+  object-fit: cover; /* Ajusta a imagem para caber sem distorcer */
+  margin-right: 10px; /* Espaçamento à direita */
+  cursor: grab;
+}
+
+/* Estilo para segundo grupo de tiers */
+.tier-group2 {
+  display: flex;
+  align-items: stretch; /* Alinha verticalmente */
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Estilo para rótulos de tier */
+.tier-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1pt solid black;
+  font-size: 20pt;
+  padding: 2%;
+  width: 10%; /* Largura ajustada */
+  height: calc(100vh / 8); /* Altura proporcional à viewport */
+}
+
+/* Área para arrastar e soltar imagens */
+.tier-side {
+  flex: 1; /* Ocupa o restante do espaço horizontal */
+  border: 1pt solid black;
+  height: calc(100vh / 8); /* Altura proporcional à viewport */
+}
+
+.tier-side2 {
+  display: flex;
+  flex: 1;
+  border: 1pt solid black;
+  height: calc(100vh / 6); /* Altura proporcional à viewport */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: flex-end; /* Alinha à direita */
+}
+
+/* Estilos de cores para diferentes tiers */
+.classS {
+  background-color: #FF7F7E; /* Vermelho */
+  color: black;
+}
+
+.classA {
+  background-color: #FDC07D; /* Amarelo Claro */
+  color: black;
+}
+
+.classB {
+  background-color: #FCFD7E; /* Amarelo Pálido */
+  color: black;
+}
+
+.classC {
+  background-color: #7EFF80; /* Verde Claro */
+  color: black;
+}
+
+.classD {
+  background-color: #82FFFF; /* Azul Claro */
+  color: black;
+}
+
+.classE {
+  background-color: #807FFF; /* Roxo Claro */
+  color: white;
+}
+
+/* Estilo do botão de upload personalizado */
+.custom-file-upload {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 2px solid #007BFF; /* Azul para a borda */
+  border-radius: 50%;
+  background-color: #007BFF;
+  color: white;
+  font-size: 24pt;
+  cursor: pointer;
+  margin-right: 8pt;
+}
+
+/* Efeitos de hover e active para o botão */
+.custom-file-upload:hover {
+  border: 2px solid #0165cf;
+  background-color: #0165cf;
+}
+
+.custom-file-upload:active {
+  border: 2px solid #007BFF;
+  background-color: #007BFF;
+}
+
+/* Esconde o input de arquivo */
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+.trash-bin{
+  position: relative;
+  background-image: url('assets/img/TrashClosed.png');
+  width: 80px;
+  height: 90px; /* Adicione altura */
+  background-size: cover; /* Ajusta o tamanho da imagem */
+  background-repeat: no-repeat; /* Previne a repetição */
+  background-position: bottom; /* Centraliza a imagem */
+}
+.hovered{
+  background-image: url('assets/img/TrashOpen.png');
+  width: 85px;
+  height: 100px; /* Adicione altura */
+  background-size: cover; /* Ajusta o tamanho da imagem */
+  background-repeat: no-repeat; /* Previne a repetição */
+  background-position: bottom; /* Centraliza a imagem */
+}
+.uploaded-image.selected {
+  border: 2px solid blue;
+  opacity: 0.8;
+}
+
+
